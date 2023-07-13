@@ -68,12 +68,17 @@ section#home {
 
 h1 {
     font-family: var(--fonte1);
+    font-size: 150px;
+    text-align: center;
+    line-height: 1em;
     margin-bottom: 50px;
 }
 
 h2 {
     font-family: var(--fonte2);
     margin: 0;
+    font-size: 50px;
+    text-align: center;
 }
 /* Fim estilo da sessão home */
 
@@ -97,7 +102,7 @@ div.resumo > h2 {
     text-transform: uppercase;
     color: #114573;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 div.resumo > p {
@@ -163,49 +168,26 @@ div.habilidade {
     color: #ffffff;
     font-size: 50px;
     letter-spacing: 0.1em;
-    margin-top: 40px;
-}
-
-div.carrossel {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100%;
-    min-height: 85vh;
-    width: 100%;
-    background: transparent;
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-    transition: all 1s;
-    
+    margin: 10px auto 10px;
 }
 
 .carrossel-cards {
-    perspective: 1200px;
+    perspective: 3000px;
     touch-action: pan-y;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     overflow: hidden;
-    list-style: none;
+    margin: 0;
     padding: 0;
     z-index: 1;
-    display: block;
-    width: 90%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 2px #120235;
-}
-
-.carrosel-slide {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    perspective: 3000px;
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px #120235;
 }
 
 .cards-carrosel {
