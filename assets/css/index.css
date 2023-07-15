@@ -138,7 +138,7 @@ section#habilidades {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #114573;
+    background-color: #731111;
     position: relative;
     z-index: 1;
 }
@@ -198,18 +198,6 @@ div.habilidade {
     transition: transform 0.4s ease-in;
 }
 
-.carousel-item {
-    width: 100%;
-    height: 65vh;
-    background-color: #111;
-    border-radius: 10px;
-    outline: 1px solid rgba(255, 255, 255, 0.8);
-    outline-offset: -8px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
-    position: relative;
-    overflow: hidden;
-}
-
 .card-link {
     border: 0.5rem solid white;
     width: 100%;
@@ -218,18 +206,86 @@ div.habilidade {
     transition: filter .5s ease-in-out;
 }
 
-.card-imagem {
-    position: absolute;
-    inset: 0;
-    width: 600px;
-    height: 465px;
-    object-fit: cover;
-    opacity: .6;
-    transition: transform .75s;
+.card-link:nth-child(1) {
+    transform: rotateY(0deg) translateZ(50vw);
 }
 
-.carousel-item:hover .card-imagem {
-    transform: scale(1.08);
+.card-link:nth-child(2) {
+    transform: rotateY(120deg) translateZ(50vw);
+}
+
+.card-link:nth-child(3) {
+    transform: rotateY(240deg) translateZ(50vw);
+}
+
+.card-link:nth-child(4) {
+    transform: rotateY(360deg) translateZ(50vw);
+}
+
+.card-imagem {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 1s ease-in-out;
+}
+
+.controller {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    bottom: 1.5rem;
+    width: 100%;
+    color: white;
+}
+
+.controller__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #120235;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.controller__button:hover {
+    transform: scale(1.1);
+}
+
+.controller__button:nth-child(1) {
+    margin: 0 3.75rem;
+}
+
+.controller__button:nth-child(3) {
+    margin: 0 3.75rem;
+}
+
+.controller__button--active {
+    background-color: white;
+    color: #120235;
+    border: 0.1875rem solid #120235;
+}
+
+.controller__line {
+    background-color: white;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+}
+
+.card-link--hovered .card-imagem {
+    transform: scale(1.4);
+    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
 }
 /* Fim estilo da sessão habilidades */
 
