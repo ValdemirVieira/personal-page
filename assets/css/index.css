@@ -172,15 +172,8 @@ div.habilidade {
 }
 
 .carrossel-cards {
-    perspective: 3000px;
-    touch-action: pan-y;
-    margin-left: auto;
-    margin-right: auto;
+    perspective: 4000px;
     position: relative;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -207,19 +200,19 @@ div.habilidade {
 }
 
 .card-link:nth-child(1) {
-    transform: rotateY(0deg) translateZ(50vw);
+    transform: rotateY(15deg) translateZ(50vw);
 }
 
 .card-link:nth-child(2) {
-    transform: rotateY(120deg) translateZ(50vw);
+    transform: rotateY(135deg) translateZ(50vw);
 }
 
 .card-link:nth-child(3) {
-    transform: rotateY(240deg) translateZ(50vw);
+    transform: rotateY(225deg) translateZ(50vw);
 }
 
 .card-link:nth-child(4) {
-    transform: rotateY(360deg) translateZ(50vw);
+    transform: rotateY(345deg) translateZ(50vw);
 }
 
 .card-imagem {
