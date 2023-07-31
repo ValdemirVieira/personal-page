@@ -43,8 +43,8 @@ span.red {
     color: red;
 }
 
-span.black {
-    color: black;
+span.branco {
+    color: white;
 }
 /* Fim estilo geral */
 
@@ -133,12 +133,12 @@ div.resumo .botao button:hover {
 /* Início estilo da sessão habilidades */
 section#habilidades {
     height: 100vh;
-    background-color: #731111e1;
+    background-color: #240505e1;
 }
 
 section#habilidades::before {
     content: "";
-    background-image: url('../images/DSC01208.jpg');
+    background-image: url('../images/bg-tela5.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -274,7 +274,7 @@ div.habilidade {
 
 /* Início estilo da sessão agendas e planos */
 section.agenda-planos {
-    background-color: rgba(242, 232, 207, 1);
+    background-color: #021220;
     color: red;
     height: 55vw;
 }
@@ -282,38 +282,39 @@ section.agenda-planos {
 div.agenda {
     margin-top: 90px;
     height: 730px;
-    width: 770px;
+    width: 50%;
     text-align: center;
-    background-color: #344E41;
 }
 
-.tabela {
-    width: 100%;
-    height: 400px;
+.calendario {
     padding: 2px 5px;
 }
 
-thead {
-    color: black;
+.tabela {
+    width: 90%;
+    height: 400px;
 }
 
-.hora-dia {
-    border: 1px solid black;
+th, td {
+    color: white;
     border-radius: 10px;
+}
+
+.bg-emuso {
+    background-color: red;
 }
 
 div.planos {
     margin-top: 90px;
     height: 550px;
-    width: 750px;
+    width: 50%;
     text-align: center;
-    background-color: #a9f0cd;
 }
 /* Fim estilo da sessão agendas e planos */
 
 /* Início estilo da sessão contatos */
 section#contatos {
-    background-image: url('../images/bg-tela5.jpg');
+    background-image: url('../images/DSC01208.jpg');
     text-align: center;
     color: white;
     height: 715px;
