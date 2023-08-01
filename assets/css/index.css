@@ -276,18 +276,18 @@ div.habilidade {
 section.agenda-planos {
     background-color: #021220;
     color: red;
-    height: 55vw;
+    height: 50vw;
 }
 
 div.agenda {
     margin-top: 90px;
-    height: 730px;
+    height: 650px;
     width: 50%;
     text-align: center;
 }
 
 .calendario {
-    padding: 2px 5px;
+    margin-left: 55px;
 }
 
 .tabela {
@@ -297,11 +297,36 @@ div.agenda {
 
 th, td {
     color: white;
+    background-color: rgba(0, 255, 81, 0.208);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.hora-dia {
+    background-color: #ffffff19;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.bg-hora-m {
+    background-color: #15548b;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.bg-hora-t {
+    background-color: #0d375d;
+    border-radius: 10px;
+}
+
+.bg-hora-n {
+    background-color: #07223a;
     border-radius: 10px;
 }
 
 .bg-emuso {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.425);
+    border-radius: 10px;
 }
 
 div.planos {
