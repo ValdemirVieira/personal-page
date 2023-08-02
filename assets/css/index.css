@@ -55,7 +55,7 @@ span.branco {
 }
 
 nav.navbar-transparente {
-    background-color: rgba(217, 217, 217, 0.3);
+    background-color: rgba(217, 217, 217, 0.2);
 }
 /* Fim estilo da barra de navegação */
 
@@ -286,6 +286,13 @@ div.agenda {
     text-align: center;
 }
 
+.agenda h3 {
+    border-left: 10px solid white;
+    background-color: rgba(0, 0, 0, 0.093);
+    width: 260px;
+    padding: 0;
+}
+
 .calendario {
     margin-left: 55px;
 }
@@ -297,43 +304,44 @@ div.agenda {
 
 th, td {
     color: white;
-    background-color: rgba(0, 255, 81, 0.208);
+    background-color: #013330;
     border-radius: 10px;
     margin-top: 10px;
 }
 
 .hora-dia {
-    background-color: #ffffff19;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    background-color: #15293B;
 }
 
 .bg-hora-m {
-    background-color: #15548b;
-    border-radius: 10px;
-    margin-top: 10px;
+    background-color: #0B68BA;
 }
 
 .bg-hora-t {
-    background-color: #0d375d;
-    border-radius: 10px;
+    background-color: #073E6E;
 }
 
 .bg-hora-n {
     background-color: #07223a;
-    border-radius: 10px;
 }
 
 .bg-emuso {
-    background-color: rgba(255, 0, 0, 0.425);
-    border-radius: 10px;
+    background-color: #210705;
 }
 
 div.planos {
     margin-top: 90px;
-    height: 550px;
+    height: 650px;
     width: 50%;
     text-align: center;
+    background-image: url('../images/bg-tela-3.jpg');
+}
+
+.planos h3 {
+    border-left: 10px solid white;
+    background-color: rgba(0, 0, 0, 0.538);
+    width: 335px;
+    padding: 0;
 }
 /* Fim estilo da sessão agendas e planos */
 
