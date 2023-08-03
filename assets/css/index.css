@@ -97,12 +97,13 @@ div.resumo {
     height: 650px;
 }
 
-div.resumo > h2 {
+div.resumo h2 {
     font-family: var(--fonte3);
     text-transform: uppercase;
     color: #114573;
     text-align: center;
     margin-top: 40px;
+    font-size: 35px;
 }
 
 div.resumo > p {
@@ -156,8 +157,9 @@ div.habilidade {
     justify-content: center;
 }
 
-.habilidade > h2 {
-    transition-delay: 400ms;
+.habilidade h2 {
+    font-family: var(--fonte3);
+    text-transform: uppercase;
     color: #ffffff;
     font-size: 50px;
     letter-spacing: 0.1em;
@@ -287,9 +289,11 @@ div.agenda {
 }
 
 .agenda h3 {
+    font-family: var(--fonte3);
+    text-transform: uppercase;
     border-left: 10px solid white;
     background-color: rgba(0, 0, 0, 0.093);
-    width: 260px;
+    width: 290px;
     padding: 0;
 }
 
@@ -338,10 +342,44 @@ div.planos {
 }
 
 .planos h3 {
+    font-family: var(--fonte3);
+    text-transform: uppercase;
     border-left: 10px solid white;
     background-color: rgba(0, 0, 0, 0.538);
     width: 335px;
     padding: 0;
+}
+
+.info-planos {
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+    width: 70%;
+}
+
+.info-planos p {
+    padding: 15px 0;
+    font-size: 24px;
+    margin-top: 50px;
+    border: 5px solid #FFF;
+    cursor: pointer;
+}
+
+.info-turma {
+    background-color: rgba(52, 78, 65, 0.5);
+}
+
+.info-particular {
+    background-color: rgba(52, 78, 65, 0.9);
+}
+
+.info-personal {
+    background-color: #013330;
+}
+
+.info-planos p:hover {
+    background-color: transparent;
+    color: red;
 }
 /* Fim estilo da sessão agendas e planos */
 
@@ -353,9 +391,16 @@ section#contatos {
     height: 715px;
 }
 
+.contato h2 {
+    font-family: var(--fonte3);
+    text-transform: uppercase;
+    margin: 90px auto 10px; 
+}
+
 div.cards-contatos {
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 div.mensageiros {
