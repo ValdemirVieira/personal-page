@@ -50,7 +50,7 @@ span.branco {
 
 /* Início estilo da barra de navegação */
 .navegacao {
-    background-color: rgb(48, 0, 0);
+    background-color: #210705;
     display: flex;
     gap: 0.5rem;
 }
@@ -68,6 +68,7 @@ span.branco {
 
 .nav-item a:hover, .nav-item a:focus {
     background-color: rgb(0, 0, 65);
+    border-radius: 10px;
     color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
     transform: translate(3px, -3px);
@@ -99,17 +100,20 @@ h2 {
 /* Fim estilo da sessão home */
 
 /* Início estilo da sessão currículo */
+section#curriculo {
+    height: 715px;
+}
+
 div.imagem01 {
     background-image: url('../images/meio-bg-tela-2.jpg');
     background-attachment: fixed;
-    background-position: right center;
-    width: 740px;
-    height: 778px;
+    width: 50%;
+    height: 100%;
 }
 
 div.resumo {
-    width: 600px;
-    height: 650px;
+    width: 50%;
+    height: 100%;
 }
 
 div.resumo h2 {
@@ -117,44 +121,49 @@ div.resumo h2 {
     text-transform: uppercase;
     color: #114573;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 90px;
     font-size: 35px;
 }
 
-div.resumo > p {
-    color: #344E41;
+div.resumo p {
+    color: #114573;
     text-align: justify;
     margin-top: 50px;
+    width: 80%;
 }
 
 .botao {
     width: 300px;
 }
 
-.botao > button {
+.botao button {
     margin: 25px;
     background: none;
     border-radius: 10px;
-    border: 3px solid #344E41;
+    border: 3px solid #114573;
     padding: 10px;
-    color: #344E41;
+    color: #114573;
+    transition: all 0.5s ease-out;
 }
 
-div.resumo .botao button:hover {
-    background-color: #344E41;
+.botao button:hover {
+    background-color: #114573;
     color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    transform: translate(3px, -3px);
+    transition: transform .3s, background-color .5s;
 }
 /* Fim estilo da sessão currículo */
 
 /* Início estilo da sessão habilidades */
 section#habilidades {
-    height: 100vh;
+    height: 707px;
     background-color: #240505e1;
 }
 
 section#habilidades::before {
     content: "";
-    background-image: url('../images/bg-tela5.jpg');
+    background-image: url('../images/danca.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -162,7 +171,6 @@ section#habilidades::before {
     height: 100%;
     position: absolute;
     opacity: 0.2;
-    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .habilidade {
@@ -178,48 +186,20 @@ section#habilidades::before {
     color: #ffffff;
     font-size: 50px;
     letter-spacing: 0.1em;
-    margin: 90px auto 10px;
+    margin-top: 90px;
+    margin-left: 400px;
 }
 
 .carrossel-cards {
+    width: 50%;
+    height: 60%;
+    margin-top: 50px;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    perspective: 4000px;
-}
-
-.cards-carrosel {
-    display: flex;
-    justify-content: center;
-    width: calc(100vw / 4 - 10%);
-    transform-style: preserve-3d;
-    transition: transform 0.4s ease-in;
-}
-
-.card-link {
     border: 0.3rem solid white;
-    width: 100%;
-    height: 50vh;
-    position: absolute;
+    border-radius: 10px;
     transition: filter .5s ease-in-out;
-    margin-top: 50px;
-}
-
-.card-link:nth-child(1) {
-    transform: rotateY(15deg) translateZ(50vw);
-}
-
-.card-link:nth-child(2) {
-    transform: rotateY(135deg) translateZ(50vw);
-}
-
-.card-link:nth-child(3) {
-    transform: rotateY(225deg) translateZ(50vw);
-}
-
-.card-link:nth-child(4) {
-    transform: rotateY(345deg) translateZ(50vw);
 }
 
 .card-imagem {
@@ -228,64 +208,6 @@ section#habilidades::before {
     object-fit: contain;
     position: relative;
     transition: 1s ease-in-out;
-}
-
-.controller {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30rem;
-    bottom: 1.5rem;
-    width: 100%;
-    color: white;
-}
-
-.controller__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border: 2px solid white;
-    border-radius: 50%;
-    background-color: #120235;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 1;
-    transition: transform 0.3s ease-in-out;
-}
-
-.controller__button:hover {
-    transform: scale(1.1);
-}
-
-.controller__button:nth-child(1) {
-    margin: 0 3.75rem;
-}
-
-.controller__button:nth-child(3) {
-    margin: 0 3.75rem;
-}
-
-.controller__button--active {
-    background-color: white;
-    color: #120235;
-    border: 0.1875rem solid #120235;
-}
-
-.controller__line {
-    background-color: white;
-    width: 50%;
-    height: 2px;
-    position: absolute;
-}
-
-.card-link--hovered .card-imagem {
-    transform: scale(1.4);
-    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
 }
 /* Fim estilo da sessão habilidades */
 
