@@ -121,14 +121,14 @@ div.resumo h2 {
     text-transform: uppercase;
     color: #114573;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 100px;
     font-size: 35px;
 }
 
 div.resumo p {
     color: #114573;
     text-align: justify;
-    margin-top: 50px;
+    margin-top: 45px;
     width: 80%;
 }
 
@@ -137,7 +137,7 @@ div.resumo p {
 }
 
 .botao button {
-    margin: 25px;
+    margin-top: 15px;
     background: none;
     border-radius: 10px;
     border: 3px solid #114573;
@@ -186,14 +186,14 @@ section#habilidades::before {
     color: #ffffff;
     font-size: 50px;
     letter-spacing: 0.1em;
-    margin-top: 90px;
+    margin-top: 95px;
     margin-left: 400px;
 }
 
 .carrossel-cards {
     width: 50%;
-    height: 60%;
-    margin-top: 50px;
+    height: 65%;
+    margin: 50px auto;
     position: relative;
     display: flex;
     align-items: center;
@@ -205,9 +205,12 @@ section#habilidades::before {
 .card-imagem {
     width: 100%;
     height: 100%;
-    object-fit: contain;
     position: relative;
     transition: 1s ease-in-out;
+}
+
+.carrossel-cards img {
+    object-fit: contain;
 }
 /* Fim estilo da sessão habilidades */
 
@@ -300,6 +303,7 @@ div.planos {
     margin-top: 50px;
     border: 5px solid #FFF;
     cursor: pointer;
+    transition: all 0.5s ease-out;
 }
 
 .info-turma {
@@ -317,12 +321,13 @@ div.planos {
 .info-planos p:hover {
     background-color: transparent;
     color: red;
+    transition: .3s, background-color .5s;
 }
 /* Fim estilo da sessão agendas e planos */
 
 /* Início estilo da sessão contatos */
 section#contatos {
-    background-image: url('../images/DSC01208.jpg');
+    background-image: url('../images/bg-tela5.jpg');
     text-align: center;
     color: white;
     height: 100%;
@@ -341,38 +346,134 @@ section#contatos {
     margin-top: 90px; 
 }
 
-div.cards-contatos {
+.cards-contatos {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
 }
 
-div.mensageiros {
+.mensageiros {
     height: 500px;
     width: 338px;
     background-color: rgba(217, 217, 217, 0.5);
     margin-bottom: 20px;
 }
 
-div.rede-social {
+.mensageiros h6 {
+    font-family: var(--fonte3);
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ico-whatsapp {
+    background: linear-gradient(180deg, #20B038 0%, #60D66A 100%);
+    padding: 15px 20px 16px 0;
+    border-radius: 9px 0 0 9px;
+}
+
+.ico-gmail {
+    background: linear-gradient(180deg, rgba(197, 34, 31, 0.75) 0%, rgba(235, 69, 54, 0.75) 100%);
+    padding: 15px 60px 16px 0;
+    border-radius: 9px 0 0 9px;
+}
+
+.ico-telegram {
+    background: linear-gradient(180deg, #2BA9ED 0%, #239FD9 100%);
+    padding: 16px 32px 17px 2px;
+    border-radius: 9px 0 0 9px;
+}
+
+.ico-telegram img {
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+.rede-social {
     height: 500px;
     width: 338px;
     background-color: rgba(217, 217, 217, 0.5);
     margin-bottom: 20px;
 }
 
-div.canais {
+.rede-social h6 {
+    font-family: var(--fonte3);
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ico-instagram {
+    background: radial-gradient(50% 50.00% at 50% 50.00%, #FF543D 0%, #C736AA 100%);
+    padding: 15px 20px 16px 0;
+    border-radius: 11px 0 0 11px;
+}
+
+.ico-facebook {
+    background: #1877F2;
+    padding: 16px 26px 17px 2px;
+    border-radius: 9px 0 0 9px;
+}
+
+.ico-facebook img {
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+.canais {
     height: 500px;
     width: 338px;
     background-color: rgba(217, 217, 217, 0.5);
     margin-bottom: 20px;
+}
+
+.canais h6 {
+    font-family: var(--fonte3);
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ico-youtube {
+    background: #F00;
+    padding: 15px 30px 16px 0;
+    border-radius: 12px 0 0 12px;
+}
+
+.ico-youtube img {
+    width: 90px;
+    height: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.ico-linkedin {
+    background: #195C82;
+    padding: 15px 30px 16px 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.ico-spotify {
+    background: #0dbd5f;
+    padding: 16px 30px 17px 2px;
+    border-radius: 9px 0 0 9px;
+}
+
+.ico-spotify img {
+    border: 1px solid;
+    border-radius: 50px;
 }
 
 .icons {
     width: 195px;
     height: 50px;
     margin-top: 30px;
-    background-color: #000000;
 }
 
 .icons img {
