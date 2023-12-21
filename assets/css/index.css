@@ -79,7 +79,7 @@ span.branco {
 /* Início estilo da sessão home */
 section#home {
     background-image: url('../images/bg-tela1.jpg');
-    height: 715px;
+    height: 100vh;
     color: white;
 }
 
@@ -101,7 +101,8 @@ h2 {
 
 /* Início estilo da sessão currículo */
 section#curriculo {
-    height: 715px;
+    width: 100%;
+    height: 100vh;
 }
 
 div.imagem01 {
@@ -128,7 +129,7 @@ div.resumo h2 {
 div.resumo p {
     color: #114573;
     text-align: justify;
-    margin-top: 45px;
+    margin-top: 40px;
     width: 80%;
 }
 
@@ -137,7 +138,7 @@ div.resumo p {
 }
 
 .botao button {
-    margin-top: 15px;
+    margin-top: 10px;
     background: none;
     border-radius: 10px;
     border: 3px solid #114573;
@@ -157,7 +158,7 @@ div.resumo p {
 
 /* Início estilo da sessão habilidades */
 section#habilidades {
-    height: 707px;
+    height: 100vh;
     background-color: #240505e1;
 }
 
@@ -209,21 +210,27 @@ section#habilidades::before {
     transition: 1s ease-in-out;
 }
 
-.carrossel-cards img {
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
     object-fit: contain;
 }
 /* Fim estilo da sessão habilidades */
 
 /* Início estilo da sessão agendas e planos */
-section.agenda-planos {
+section#agendaeplanos {
     background-color: #021220;
     color: red;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
 }
 
 div.agenda {
-    margin-top: 90px;
-    height: 650px;
+    margin-top: 75px;
+    height: 100%;
     width: 50%;
     text-align: center;
 }
@@ -243,7 +250,7 @@ div.agenda {
 
 .tabela {
     width: 90%;
-    height: 400px;
+    height: 100%;
 }
 
 th, td {
@@ -274,11 +281,21 @@ th, td {
 }
 
 div.planos {
-    margin-top: 90px;
-    height: 650px;
+    margin-top: 75px;
+    height: 100%;
     width: 50%;
     text-align: center;
+}
+
+div.planos::before {
+    content: "";
     background-image: url('../images/bg-tela-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 .planos h3 {
